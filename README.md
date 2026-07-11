@@ -27,16 +27,6 @@ A polished, responsive cybernetic landing page built with semantic HTML, modern 
 
 The visual language leans into AI-human integration rather than cliché neon overload. Deep matte black surfaces, restrained cyan-violet accents, and soft orbital motion create an atmosphere that feels technical, calm, and intentionally futuristic. The interface aims to feel like a premium control environment rather than a flashy gimmick.
 
-## Screenshots
-
-### Desktop Preview
-
-![Desktop preview](assets/desktop-preview.svg)
-
-### Mobile Preview
-
-![Mobile preview](assets/mobile-preview.svg)
-
 ## Notes
 
 The layout is designed to be production-ready, easy to maintain, and simple to extend with additional sections or animation systems.
