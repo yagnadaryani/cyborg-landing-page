@@ -1,0 +1,168 @@
+:root {
+  --bg: #04070b;
+  --bg-soft: rgba(255, 255, 255, 0.04);
+  --surface: rgba(8, 14, 21, 0.82);
+  --surface-strong: rgba(13, 19, 29, 0.95);
+  --text: #f3f7ff;
+  --muted: #92a0b7;
+  --accent: #48d1ff;
+  --accent-2: #9b7bff;
+  --border: rgba(255, 255, 255, 0.11);
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(72, 209, 255, 0.18), transparent 25%),
+    radial-gradient(circle at top right, rgba(155, 123, 255, 0.16), transparent 30%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.bg-glow {
+  position: fixed;
+  inset: auto;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-glow--one {
+  top: -5rem;
+  left: -6rem;
+  background: var(--accent);
+}
+
+.bg-glow--two {
+  bottom: 0;
+  right: -4rem;
+  background: var(--accent-2);
+}
+
+.site-header,
+.hero,
+.section,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand__mark {
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 16px rgba(72, 209, 255, 0.55);
+}
+
+.site-nav {
+  display: none;
+  gap: 1.25rem;
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--text);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.88rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #03121b;
+  font-weight: 700;
+}
+
+.button--ghost {
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.button--small {
+  padding: 0.6rem 0.95rem;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.2rem 1rem 3.5rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.21em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.chunks truncated for brevity...
